@@ -1,0 +1,10 @@
+# BARE NECESSITIES HERO TEST
+
+I could also this in javascript that passes image and content parameters to a reusable function. In my experience, working with backend teams, it is preferred to not create content that way because it could create conflicts. Plus, since the order of links changes between desktop and mobile, it would add another dimension to the array which could become confusing without a lot of documentation on how to use the function properly. I decided a stright HTML solution is best for this scenario especially if the code is going in to a CMS system.
+
+The template is the HTML between the start to end hero comments. You would just need to update the id in the hero-container class, swap the image in the picture tag. Change the titles, and update the links.
+
+In the CSS file, the template styles are first, you would need to add a custom style to place the content based on the id of the hero-container. 
+
+Andrew Fitzpatrick
+[doctorfitztastic@gmail.com](mailto:doctorfitztastic@gmail.com)
