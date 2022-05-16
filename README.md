@@ -4,7 +4,9 @@ I could also this in javascript that passes image and content parameters to a re
 
 The template is the HTML between the start to end hero comments. You would just need to update the id in the hero-container class, swap the image in the picture tag. Change the titles, and update the links.
 
-In the CSS file, the template styles are first, you would need to add a custom style to place the content based on the id of the hero-container. 
+In the CSS file, the template styles are first, you would need to add a custom style to place the content based on the id of the hero-container.
+
+One more item, the FONTS folder in the project was empty, so I used Roboto from [Google Fonts](https://fonts.google.com/specimen/Roboto).
 
 Andrew Fitzpatrick
 [doctorfitztastic@gmail.com](mailto:doctorfitztastic@gmail.com)
