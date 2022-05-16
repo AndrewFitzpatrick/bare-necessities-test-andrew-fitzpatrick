@@ -1,0 +1,158 @@
+/* font import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+/* template styles */
+
+.desktop-hidden {
+	display: none;
+}
+
+.hero-container {
+	width: 100%;
+	position: relative;
+	max-width: 1400px;
+	display: block;
+}
+
+.image-section img {
+	width: 100%;
+}
+
+.content-section {
+	text-align: center;
+	position:  absolute;
+	transform: translateY(-50%);
+	top: 50%;
+}
+
+.content-section p {
+	font-size:  1.2vw;
+	line-height:  1.4;
+	margin: 0;
+	letter-spacing: -0.2px;
+	margin: 0 0 0.5vw 0;
+}
+
+.content-section h2 {
+	font-size: 2.5vw;
+	font-weight: 100;
+	margin: 0 0 2.4vw 0;
+}
+
+.links-section a {
+	letter-spacing: 0.5px;
+    margin-right: 1vh;
+    font-size: 1.2vw;
+    margin-top: 2.4vw;
+    display: inline-block;
+}
+
+.links-section a:after {
+	content: '';
+	width: 0;
+    height: 0;
+    border-width: 100px;
+    border-style: solid;
+    display: inline-block;
+    border: 4px solid transparent;
+    border-left-color: black;
+    margin-left: 3px;
+}
+
+/* custom content placement */
+#activewear-hero .content-section {
+	width: 36.5%;
+    right: 15.6%;
+}
+
+#bras-hero .content-section {
+	width: 31.5%;
+    left: 2.6%;
+}
+
+#hosiery-hero .content-section {
+	width: 28.5%;
+    right: 15.6%;
+}
+
+/* xl device */
+@media print, screen and (min-width: 1400px) {
+
+	.content-section h2 {
+		font-size: 35px;
+		margin-bottom: 35px;
+	}
+	
+	.links-section a {
+		font-size: 1rem;
+		margin-top: 35px;
+	}
+	
+	.content-section p {
+		font-size: 1rem;
+		margin-bottom:  10px;
+	}
+	
+	.links-section a:after {
+		border: 6px solid transparent;
+		border-left-color: black;
+		margin-left: 10px;
+	}
+}
+
+/* medium device styles */
+@media screen and (max-width: 767px) {
+	
+	.hero-container {
+		height: 166vw;
+	}
+	
+	.mobile-hidden {
+	    display: none!important;
+	}
+	
+	.desktop-hidden {
+		display: block;
+	}
+	
+	.content-section {
+		position: relative;
+		width: 100% !important;
+    	top: 0% !important;
+    	right: 0% !important;
+    	transform: none;
+	}
+	
+	.links-section {
+		margin-top: 0;
+	}
+	
+	.links-section a {
+		font-size: 4.8vw;
+		line-height: 1.9;
+	}
+	
+	.links-section a:after {
+		border: 1.3vh solid transparent;
+		border-left-color: black;
+		margin-left: 10px;
+	}
+
+	/* medium device custom placement */
+	#hosiery-hero .links-section a, #activewear-hero .links-section a {
+		width: 100%;
+    	display: block;
+    }
+
+	#bras-hero .links-section a {
+		width: 48%;
+    	display: inline-block;
+    }
+}
